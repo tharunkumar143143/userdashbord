@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="space1">
+        <h1 class="head">User Management Dashboard</h1>
+        <button id="addUser" class="button">New User</button>
+    </div>
+    <div id="userForm" class="space" style="display:none;">
+        <form id="userFormInputs">
+            <input type="text" class="input" id="firstName" placeholder="First Name" required><br>
+            <input type="text" class="input" id="lastName" placeholder="Last Name" required><br>
+            <input type="email" class="input" id="email" placeholder="Email" required><br>
+            <input type="text" class="input" id="department" placeholder="Department"><br>
+            <button type="submit" class="button">Save</button>
+            <button type="button" id="cancelForm" class="button">Cancel</button>
+        </form>
+    </div>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div id="error-message"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+</html>
